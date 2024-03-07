@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap");
+:root{
+    --primary-color:#197602;
+    --primary-light-color: #8ecef8;
+    --primart-dark-color: #7abb50;
+    --accent-color: #FF4081;
+    --accent-light-color: #FF80A3;
+    --accent-DARK-color: #CC4005;
+    --body-new-color:#cccccc;
+}
+
+
+body{
+    font-family: Arial,sans-serif, 'cursive', tahoma, Verdana, 'Geneva';
+    margin: 0;
+    padding: 0;
+    /* background-color: #ccc; */
+    background-image: linear-gradient(to right, #608058, #75bd70, rgb(189, 219, 179), #2bac1c);
+}
+
+.container{ 
+    max-width: 600px !important;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: var(--primart-dark-color);
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input::placeholder{
+    background-color: transparent;
+    border: none;
+    appearance: none;
+}
+button{
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease !important;
+}
+
+button:hover{
+    background-color: var(--primart-dark-color) !important;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    font-size: 16px;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-button{
+    background-color: var(--accent-color);
+}
+
+.delete-button:hover{
+    background-color: var(--accent-DARK-color);
+}
+
+.complete-button{
+    background-color: #28a745;
+}
+
+.complete-button:hover{
+    background-color: #218838;
+}
+
+@media (max-width: 991.98px) {
+    body{
+        background-color:pink !important;
+    }
+    h1{
+        color:#cb4576;
+    }
+    button{
+        background-color: #cb4576 !important;
+    }
+    button:hover{
+        background-color:#e75e9e !important;
+    }
+}
+@media (min-width:500px) {
+    button:hover{
+        background-color: #ed7fb2 !important; 
+    }
+    input::placeholder{
+        text-align: center;
+    }
+    input{
+        border: none;
+    }
+}
